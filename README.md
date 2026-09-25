@@ -2,7 +2,7 @@
 
 大巴扎助手的官方下载页，部署在 [bazzarhelper.com](https://bazzarhelper.com/)。
 
-安装包与版本记录见 [GitHub Releases](https://github.com/abazzar/abazzar.github.io/releases)。
+安装包与版本记录由 [BazzarHelper Releases](https://github.com/abazzar/BazzarHelper/releases) 维护。
 
 ## 致谢
 
