@@ -5,8 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#101615">
-  <meta name="description" content="下载大巴扎助手，支持 macOS Apple 芯片与 Windows x64。">
-  <title>下载大巴扎助手</title>
+  <meta name="description" content="大巴扎助手是一款大巴扎战绩记录与分享插件，自动同步游戏战绩到微信小程序。支持 macOS Apple 芯片与 Windows x64，免费下载。">
+  <meta name="keywords" content="大巴扎,大巴扎战绩,战绩记录,战绩分享,大巴扎插件,微信小程序,大巴扎助手,BazzarHelper,The Bazaar">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="BazzarHelper">
+  <link rel="canonical" href="https://bazzarhelper.com/">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="大巴扎助手">
+  <meta property="og:title" content="大巴扎助手｜战绩记录、分享与微信小程序">
+  <meta property="og:description" content="自动记录大巴扎游戏战绩，同步到微信小程序，随时回看和分享每局战斗。">
+  <meta property="og:url" content="https://bazzarhelper.com/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="大巴扎助手｜战绩记录、分享与微信小程序">
+  <meta name="twitter:description" content="下载大巴扎战绩记录插件，自动同步战绩到微信小程序。">
+  <title>大巴扎助手下载｜战绩记录、分享与微信小程序</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "大巴扎助手",
+      "alternateName": "BazzarHelper",
+      "url": "https://bazzarhelper.com/",
+      "downloadUrl": "https://github.com/abazzar/abazzar.github.io/releases/tag/v0.1.0",
+      "softwareVersion": "0.1.0",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "macOS, Windows",
+      "inLanguage": "zh-CN",
+      "description": "大巴扎战绩记录与分享插件，自动同步游戏战绩到微信小程序。",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "CNY"
+      }
+    }
+  </script>
   <style>
     :root {
       color: #e8ebe5;
@@ -94,6 +127,12 @@
 
     .notice { margin: 12px 4% 0; padding: 18px 20px; border: 1px solid #46564d; border-radius: 6px; background: var(--panel); color: #aeb9b1; font-size: 12px; line-height: 1.75; }
     .notice strong { color: #dce3de; }
+    .acknowledgement { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin: 30px 4% 0; padding: 18px 0; border-bottom: 1px solid var(--line-soft); }
+    .acknowledgement-label { margin: 0 0 5px; color: var(--gold); font-size: 11px; font-weight: 700; letter-spacing: 1.4px; }
+    .acknowledgement-copy { margin: 0; color: var(--quiet); font-size: 12px; line-height: 1.7; }
+    .acknowledgement-links { display: flex; flex: none; gap: 10px; }
+    .acknowledgement-links a { padding: 7px 10px; border: 1px solid #526259; border-radius: 5px; color: #c9d4cc; font-size: 12px; text-decoration: none; }
+    .acknowledgement-links a:hover { border-color: var(--gold); color: var(--gold-light); }
     footer { display: flex; justify-content: space-between; gap: 24px; margin: 46px 4% 0; padding-top: 20px; border-top: 1px solid var(--line-soft); color: #708077; font-size: 11px; }
 
     @media (max-width: 760px) {
@@ -105,6 +144,7 @@
       .download-card { padding: 28px 4%; }
       .download-card + .download-card { border-top: 1px solid var(--line); border-left: 0; }
       .sources { grid-template-columns: 1fr; gap: 0; }
+      .acknowledgement { align-items: flex-start; flex-direction: column; gap: 14px; }
       footer { flex-direction: column; gap: 8px; }
     }
 
@@ -131,8 +171,8 @@
     <section class="hero">
       <div>
         <p class="kicker">DESKTOP CLIENT</p>
-        <h1>记录每一局，<br>回看每场战斗。</h1>
-        <p class="lead">自动读取本机游戏战绩，并同步到微信小程序。选择你的系统下载安装，即可开始记录。</p>
+        <h1>大巴扎战绩，<br>记录与分享。</h1>
+        <p class="lead">大巴扎助手是一款桌面战绩插件，自动读取本机游戏记录并同步到微信小程序，让你随时回看和分享每场战斗。</p>
       </div>
       <div class="hero-meta">
         <p class="meta-label">支持平台</p>
@@ -175,6 +215,16 @@
     </section>
 
     <aside class="notice"><strong>首次打开提示：</strong>当前安装包未进行开发者签名。macOS 请在“系统设置 → 隐私与安全性”中允许打开；Windows 若显示 SmartScreen 提示，请选择“更多信息 → 仍要运行”。你可以使用页面提供的 SHA-256 校验安装包完整性。</aside>
+    <section class="acknowledgement" aria-label="致谢">
+      <div>
+        <p class="acknowledgement-label">致谢</p>
+        <p class="acknowledgement-copy">感谢 BazaarPlusPlus 项目及其开源社区的贡献。</p>
+      </div>
+      <div class="acknowledgement-links">
+        <a href="https://bazaarplusplus.com/" target="_blank" rel="noreferrer">项目官网 ↗</a>
+        <a href="https://github.com/BazaarPlusPlus" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </div>
+    </section>
     <footer><span>© 2026 BazzarHelper</span><span>bazzarhelper.com</span></footer>
   </main>
 
